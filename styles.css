@@ -1,0 +1,70 @@
+/* General styles */
+section {
+  padding: 80px 0;
+  display: none; /* Initially hide all sections */
+}
+
+section.active {
+  display: block; /* Show active section */
+}
+
+body {
+  padding-top: 100px; /* Adjust based on navbar height */
+  background-color: #000000;
+  background-image: url('https://i.pinimg.com/236x/96/6d/d0/966dd094f8f12ae1286c75953ae2c964.jpg');
+  background-size: cover;
+}
+
+/* Additional styles for headings and paragraphs */
+h1 {
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
+p {
+  font-size: 1.1rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: center;
+  color: #fff5f5;
+}
+/* Background image for the home section */
+#home {
+  background-image: url('https://i.pinimg.com/564x/6c/e5/10/6ce5101f5f75438ee37ad894e7950d03.jpg');
+  background-size: cover;
+  background-color: #000000;
+  border-radius: 20%;
+  text-align: center;
+  color: #ffffff; /* Text color for better readability */
+}
+
+/* Additional styles for navbar */
+.navbar-brand {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+/* Styles for person image */
+.person-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 20%;
+  height: auto;
+  border-radius: 0%;
+  margin-bottom: 20px;
+  image-orientation: ;
+  
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"> <!-- Link your CSS file -->
+    <title>Hannah</title>
+    <style>
+        section {
+            padding: 80px 0;
+            display: none; /* Initially hide all sections */
+        }
+        section.active {
+            display: block; /* Show active section */
+        }
+        body {
+            padding-top: 1px; /* Adjust based on navbar height */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('home')">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('about')">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showSection('contact')">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="container active">
+        <h1>Welcome to My Website</h1>
+        <p>This is a summary of the website.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h1>About Me</h1>
+        <img src="me-3.jpg" alt="Person" class="person-image">
+        <p>Here is my personal information.</p>
+        <p>I am Hannah T. Velono.</p>
+        <p>3rd Year- Data Science Student</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h1>Contact Me</h1>
+        <p>Here is my contact information.</p>
+        <p> Email: velono.hannah@gmail.com</p>
+    </section>
+
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript to Show and Hide Sections -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            showSection('home');
+        });
+    </script>
+</body>
+</html>
